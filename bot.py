@@ -2,7 +2,7 @@ import discord
 import os
 
 import google.generativeai as genai
-genai.configure(api_key=os.environ["AIzaSyCsM0BV0ZosJUyZH3-9f8UIdQN5QaPN8ak"])
+genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
 model = genai.GenerativeModel('gemini-1.5-flash-latest')
 chat = model.start_chat(history=[])
 
